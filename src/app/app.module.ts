@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { LayoutMainComponent } from './Layout/layout-main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './headers/user-info.component';
+import { EditUserInfoComponent } from './Body/edit-user-info.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,13 +20,15 @@ import { UserInfoComponent } from './headers/user-info.component';
     footer,
     BodyComponent,
     LayoutMainComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    EditUserInfoComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

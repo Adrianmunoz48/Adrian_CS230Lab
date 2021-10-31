@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { UserInfo } from "../headers/user-info.model";
 import { UserInfoService } from "../user-info.service";
+import { DatabaseService } from "./database.service";
 
 
 @Component({ 
@@ -9,7 +10,8 @@ import { UserInfoService } from "../user-info.service";
 })
 export class EditUserInfoComponent{
 
-    constructor(private infoService: UserInfoService){
+    constructor(private infoService: UserInfoService, private dbService:DatabaseService){
+        dbService.showData();
 
     }
 

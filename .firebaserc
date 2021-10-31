@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mlb-app-7942f": {
+      "hosting": {
+        "MLB-app": [
+          "mlb-app-7942f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mlb-app-7942f"
+  }
+}
